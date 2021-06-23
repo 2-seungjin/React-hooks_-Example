@@ -1,10 +1,8 @@
 import React from "react";
-import State from "./hooks/state";
+import State2 from "./hooks/State2";
 
 function App() {
-  return (
-    <div><State/></div>
-  );
+  return <State2 />;
 }
 
 export default App;
