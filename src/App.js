@@ -1,8 +1,8 @@
 import React from "react";
-import State2 from "./hooks/State2";
+import Effect from "./hooks/Effect";
 
 function App() {
-  return <State2 />;
+  return <Effect />;
 }
 
 export default App;
