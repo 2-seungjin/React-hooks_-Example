@@ -1,11 +1,16 @@
 import React, {useEffect, useState} from "react";
 
-const Effect2 = () => {
+const Effect3 = () => {
   const [name, setName] = useState('');
   const [nickname, setNickname] = useState('');
 
   useEffect(() => {
+    console.log('effect');
     console.log(name);
+    return () => {
+      console.log('cleanup');
+      console.log(name);
+    }
   }, [name]);
 
 
@@ -35,4 +40,4 @@ const Effect2 = () => {
   );
 }
 
-export default Effect2;
+export default Effect3;
