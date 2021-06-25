@@ -1,10 +1,10 @@
 import React from "react";
-import Reducer2 from "./hooks/Reducer2";
+import Average from './hooks/useMemo'
 
 const App = () => {
   return (
     <div>
-      <Reducer2 />
+      <Average />
     </div>
   );
 }
