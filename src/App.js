@@ -1,5 +1,5 @@
 import React from "react";
-import Average from './hooks/useMemo'
+import Average from './hooks/useMemo/useMemo'
 
 const App = () => {
   return (
