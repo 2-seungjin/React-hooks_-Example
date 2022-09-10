@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Average from './hooks/useMemo/useMemo'
+import Effect3 from './hooks/useEffect/Effect3'
 
-const App = () => {
-  return (
-    <div>
-      <Average />
-    </div>
-  );
-}
+//const App = () => {
+//   return (
+//     <div>
+//       <Average />
+//     </div>
+//   );
+// }
+//
+// export default App;
 
-export default App;
 
-
-/*
-useEffect3 화면 가리기, 보이기 렌더링 직후 특정값 변경시 이벤트
+// useEffect3 화면 가리기, 보이기 렌더링 직후 특정값 변경시 이벤트
 function App() {
   const [visible, setVisible] = useState(false);
   return (
@@ -26,4 +26,4 @@ function App() {
     </div>
   );
 }
-*/
+export default App
