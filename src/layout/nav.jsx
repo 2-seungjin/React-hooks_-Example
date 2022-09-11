@@ -3,7 +3,7 @@ import { Menu } from 'antd'
 import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons'
 import Sider from 'antd/es/layout/Sider'
 
-const Nav = ({collapsed, setCollapsed}) => {
+const Nav = ({collapsed}) => {
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
       <div className="logo" />
