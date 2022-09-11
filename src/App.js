@@ -3,7 +3,9 @@ import MainLayout from './layout/layout'
 
 const App = () => {
    return (
-    < MainLayout />
+    <MainLayout>
+      asdasd
+    </MainLayout>
    );
  }
 
