@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import CodeBlocks from '../../components/CodeBlock';
 import { Form, Input } from 'antd';
 
 const StateInputs = () => {
@@ -14,54 +13,6 @@ const StateInputs = () => {
       [id]: value,
     });
   };
-
-  const codeBlockText =
-    'const StateInputs = () => {\n' +
-    '  const [name, setName] = useState({\n' +
-    "    name: '',\n" +
-    "    nickName: '',\n" +
-    '  });\n' +
-    '  const onChange = ({ target }) => {\n' +
-    '    const { value, id } = target;\n' +
-    '    setName({\n' +
-    '      ...name,\n' +
-    '      [id]: value,\n' +
-    '    });\n' +
-    '  };\n' +
-    '\n' +
-    "  const codeBlockText = '';\n" +
-    '  return (\n' +
-    '    <div>\n' +
-    '      <Form\n' +
-    '        name="basic"\n' +
-    '        labelCol={{ span: 4 }}\n' +
-    '        wrapperCol={{ span: 10 }}\n' +
-    '        initialValues={{ remember: true }}\n' +
-    '        autoComplete="off">\n' +
-    '        <Form.Item\n' +
-    '          label="Name"\n' +
-    '          name="Name"\n' +
-    "          rules={[{ required: true, message: 'Please input your Name!' }]}>\n" +
-    "          <Input id={'name'} value={name.name} onChange={onChange} />\n" +
-    '        </Form.Item>\n' +
-    '        <Form.Item\n' +
-    '          label="Nick Name"\n' +
-    '          name="Nick Name"\n' +
-    "          rules={[{ required: true, message: 'Please input your Nick Name!' }]}>\n" +
-    "          <Input id={'nickName'} value={name.nickName} onChange={onChange} />\n" +
-    '        </Form.Item>\n' +
-    '      </Form>\n' +
-    '      <div>\n' +
-    '        <div>\n' +
-    '          <b>이름 : </b> {name.name}\n' +
-    '        </div>\n' +
-    '        <div>\n' +
-    '          <b>닉네임 : </b> {name.nickName}\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '  );\n' +
-    '};';
   return (
     <div>
       <Form
@@ -91,8 +42,6 @@ const StateInputs = () => {
           <b>닉네임 : </b> {name.nickName}
         </div>
       </div>
-
-      <CodeBlocks code={codeBlockText} />
     </div>
   );
 };
