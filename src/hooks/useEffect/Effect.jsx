@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from 'react';
 
 const Effect = () => {
   const [name, setName] = useState('');
@@ -7,24 +7,23 @@ const Effect = () => {
   useEffect(() => {
     console.log({
       name,
-      nickname
-    })
+      nickname,
+    });
   }, []);
 
-
-  const onChangeName = e => {
+  const onChangeName = (e) => {
     setName(e.target.value);
   };
 
-  const onChangeNickname = e => {
+  const onChangeNickname = (e) => {
     setNickname(e.target.value);
-  }
+  };
 
   return (
     <div>
       <div>
-        <input type="text" value={name} onChange={onChangeName}/>
-        <input type="text" value={nickname} onChange={onChangeNickname}/>
+        <input type="text" value={name} onChange={onChangeName} />
+        <input type="text" value={nickname} onChange={onChangeNickname} />
       </div>
       <div>
         <div>
@@ -36,6 +35,6 @@ const Effect = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Effect
+export default Effect;
